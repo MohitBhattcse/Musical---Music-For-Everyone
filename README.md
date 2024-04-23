@@ -1,2 +1,1 @@
-# Musical---Music-For-Everyone
-Website of music
+# mini-player

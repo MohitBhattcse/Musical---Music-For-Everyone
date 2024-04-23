@@ -1,0 +1,388 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    
+}
+.side-bar{
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+
+
+}
+
+.main-content{
+    background-color: black;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.7rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+nav option a{
+    font-size: 1rem;
+    margin: 1rem;
+}
+.nav-option:hover{
+    opacity: 1;
+    
+}
+.library{
+    /* background-color: #121212; */
+    border-radius: 1rem ;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding:  0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+icons{
+    display: flex;
+    font-size: 1.25rem;
+    opacity:1;
+    margin-right: 1rem;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+} 
+.box{
+    height: 8rem;
+    background-color: #232322;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem ;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500 ;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    background-color: #232322;
+
+
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    background-color: #232322;
+    
+}
+.badge{
+    color:black ;
+    background-color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem ;
+    height: 2rem;
+    width: fit-content;
+    margin-top: 0.75rem;
+}
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.nav-icon{
+    margin-left: 0.75rem;
+
+
+}
+.downloads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.badge-dowlo{
+    margin-right: 1rem;
+    background-color: white;
+    color: #000;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+}
+
+@media(max-width:1000px){
+    .none{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border: none;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+.card-info{
+    background-color: #232323;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+.card-title{
+    background-color: #232323;
+    margin-top: 0.3rem;
+    font-weight: 700;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+    
+}
+
+
+.music-player{
+    display: flex;
+
+}
+.album{
+    width: 25%;
+    margin-top: 0.5rem;
+    
+  
+}
+.player{
+    margin-top: 1.5rem;
+    width: 50%;
+
+}
+
+
+
+.pc{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14rem;
+}
+.ss{
+    height: 1rem;
+    margin-top: 0.6rem;
+    margin-right: 0.7rem;
+    opacity: 0.7rem;
+}
+
+.ss:hover{
+    opacity: 1;
+}
+/* .ss{
+    height: 1rem;
+     margin-right: 0.5rem;
+} */
+
+.playbackbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+.progbar{
+    width: 80%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+
+}
+
+.progbar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius:100px;
+    height: 0.2rem;
+
+}
+.progbar::-webkit-slider-runnable-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -0.6px;
+}
+
+
+
+.mi-img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.c-title{
+
+font-weight: 700;
+font-size: 1rem;
+margin-left: 0.5rem;
+position: absolute;
+top: 0.8rem;
+
+}
+.c-info{
+    font-size: 0.7rem;
+    margin-left: 4.6rem;    
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    position: absolute;
+top: 2rem;
+
+}
+.heart{
+    margin-left: 9rem;
+    margin-bottom: 0.7rem;
+}
+.solid{
+    margin-left: 11rem;
+    position: relative;
+    bottom: 2rem;
+}
+.controls{
+    margin-left: 2rem;
+
+}
+.cs{
+    margin-top: 2.5rem;
+    margin-left: 0.4rem;
+}
+.custom{
+    width: 100%;
+    display: flex;
+    
+    display: flex;
+}
+.we{
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    color: white;
+}
+.copy{
+    
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 16rem;
+   color: white;
+}
+table{
+    width: 50%;
+    height: 30%;
+    margin-top: 1rem;
+    text-align: left;
+    padding: 1.5rem;
+    padding-top: 3rem;
+}
+td{
+    padding-top: 0.8rem;
+   opacity: 0.7;
+}
+td:hover{
+   opacity: 1;
+   color: snow
+}
+thead{
+    
+    margin-top: 0.8rem;
+}
+
+.c-icon{
+    display: flex;
+    margin-left: 50rem;
+    position:sticky;
+    bottom: 23.5rem;
+    
+}
+.ico{
+    font-size: 3rem;
+    padding: 1rem;
+    box-shadow: inset;
+   
+}
